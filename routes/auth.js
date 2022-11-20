@@ -9,7 +9,7 @@ const router = require("express").Router()
 
 router.post("/signup", signup)
 router.post("/login", login)
-router.get("/user", user)
+router.post("/user", user)
 
 
 router.post("/add_healthscore",add_healthscore)
