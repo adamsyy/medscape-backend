@@ -13,7 +13,7 @@ router.post("/user", user)
 
 
 router.post("/add_healthscore",add_healthscore)
-router.get("/food",food)
+router.post("/food",food)
 
 
 module.exports = router
