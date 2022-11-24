@@ -50,6 +50,9 @@ app.use("/nearby", require("./routes/nearby"));
 //endpoint for blogs
 app.use("/blogs", require("./routes/blogs"));
 
+//endpoints for blood queries
+app.use("/blood", require("./routes/blood"));
+
 
 
 const PORT = process.env.PORT || 5000;
