@@ -4,6 +4,7 @@ const bcrypt = require("bcryptjs");
 
 const User = new Schema({
     email: String,
+    blood_group: String,
     username: {
         type: String,
         required: true,

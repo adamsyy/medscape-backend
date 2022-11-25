@@ -3,7 +3,7 @@
 const UserSchema = require("../../model/User")
 
 module.exports.signup = async (req, res) => {
-  var { username, password, email, name, age, allergies, operations,medicines,prescriptions,isdoctor } = req.body;
+  var { username, password, email, name, age, allergies, operations,medicines,prescriptions,isdoctor, blood_group,sex,height,weight,waist } = req.body;
   try {
     const user = await UserSchema.findOne({ username });
     if (user) {
@@ -27,7 +27,12 @@ module.exports.signup = async (req, res) => {
       operations,
       medicines,
       prescriptions,
-      isdoctor
+      isdoctor,
+      blood_group,
+      sex,
+      height,
+      weight,
+      waist
     });
 
     await newUser.save();
