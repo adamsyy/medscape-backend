@@ -25,7 +25,7 @@ app.use(cors())
 
 //send response api is working 
 app.get("/", (req, res) => {
-    res.send("API is up and running");
+    res.send("API is up and running.");
 });
 
 
@@ -52,6 +52,9 @@ app.use("/blogs", require("./routes/blogs"));
 
 //endpoints for blood queries
 app.use("/blood", require("./routes/blood"));
+
+//endpoints for testing purposes
+app.use("/test", require("./routes/test"));
 
 
 
